@@ -21,7 +21,7 @@ source $HOME/.bash_profile
 ### Set Variable (Change "MONIKER_NAME" With Yourself )
 ```
 echo "export WALLET="wallet"" >> $HOME/.bash_profile
-echo "export MONIKER="MONIKER_NAME"" >> $HOME/.bash_profile
+echo "export MONIKER="YOUR_NODE_NAME"" >> $HOME/.bash_profile
 echo "export AIRCHAIN_CHAIN_ID="junction"" >> $HOME/.bash_profile
 echo "export AIRCHAIN_PORT="19"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
@@ -125,7 +125,7 @@ echo "{\"pubkey\":{\"@type\":\"/cosmos.crypto.ed25519.PubKey\",\"key\":\"$(junct
     \"moniker\": \"YOUR_MONIKER\",
     \"identity\": \"YOUR_KEYBASE_IDENTITY\",
     \"website\": \"YOUR_WEBSITE\",
-    \"security\": \"\",
+    \"security\": \"YOUR_EMAIL\",
     \"details\": \"YOUR_DETAILED\",
     \"commission-rate\": \"0.05\",
     \"commission-max-rate\": \"0.2\",
@@ -136,5 +136,6 @@ echo "{\"pubkey\":{\"@type\":\"/cosmos.crypto.ed25519.PubKey\",\"key\":\"$(junct
 junctiond tx staking create-validator validator.json \
     --from $WALLET \
     --chain-id junction \
-	--fees 200amf \
+    --fees 200amf \
+-y
 ```
