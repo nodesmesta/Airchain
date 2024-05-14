@@ -1,4 +1,4 @@
-# Airchain Installation Guide
+# Airchain Guide Of Setup Node & Validator
 ## Full Node Installation
 ### Install Dependencies
 ```
